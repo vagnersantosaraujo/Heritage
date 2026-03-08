@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .glass-panel {
+        @apply bg-white/40 dark:bg-slate-900/40 backdrop-blur-xl border border-white/40 dark:border-slate-800/50 shadow-sm;
+    }
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-br from-primary to-primary-dark;
+    }
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
