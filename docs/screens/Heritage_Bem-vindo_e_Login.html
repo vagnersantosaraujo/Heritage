@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heritage - Bem-vindo e Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "primary-dark": "#0ea63e",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass-panel {
+                @apply bg-white/40 dark:bg-slate-900/40 backdrop-blur-xl border border-white/40 dark:border-slate-800/50 shadow-sm;
+            }
+            .text-gradient {
+                @apply bg-clip-text text-transparent bg-gradient-to-br from-primary to-primary-dark;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased h-screen overflow-hidden relative">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 dark:opacity-20" data-alt="abstract elegant soft light background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHEP4uFGFEUE1iy0Cf1GMSI5ldJFp9rFaXx8MdUdIN61PgIER8vbr7_oHaddmRWogIO01D1G6oGIiHkYodKWYJDhZ5puh2JhmuloH35eDQrh1xeEOYBSJIibT2S7Lz-ncgaURoIUqjFWh18wf0PKnR_wqFYCt1CNWuBPAC_05xaJ3qnDC8mdmzXKWl8Q3S0G5kXzl_4BoXpSFqwKwycDf01Rt0FiR1NiC7qXGg9kkYHVhZCAywK5FhgP1AbfA8KDA3PGpshHtmEQU");'></div>
+<div class="absolute inset-0 bg-background-light/70 dark:bg-background-dark/80 backdrop-blur-2xl"></div>
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-primary/10 blur-[100px] mix-blend-multiply dark:mix-blend-screen"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-primary/10 blur-[80px] mix-blend-multiply dark:mix-blend-screen"></div>
+</div>
+</div>
+<main class="relative z-10 flex flex-col h-full w-full max-w-md mx-auto px-6 py-10 justify-between">
+<div class="flex-none h-12"></div>
+<div class="flex flex-col items-center justify-center flex-grow space-y-8 mt-8">
+<div class="w-24 h-24 rounded-3xl glass-panel flex items-center justify-center bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 shadow-lg border border-white/80 dark:border-slate-700/80">
+<span class="material-symbols-outlined text-6xl text-gradient drop-shadow-sm font-light" style="">
+                    account_balance
+                </span>
+</div>
+<div class="text-center space-y-3 px-2">
+<h1 class="text-[40px] font-extrabold tracking-tight text-slate-900 dark:text-white leading-none" style="">
+                    Heritage
+                </h1>
+<p class="text-[17px] font-medium text-slate-600 dark:text-slate-300 max-w-[280px] mx-auto leading-relaxed" style="">
+                    Gestão financeira inteligente para casais</p>
+</div>
+</div>
+<div class="flex-col w-full pb-6 space-y-4">
+<button class="flex items-center justify-center w-full h-14 rounded-xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold gap-3 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.1)] border border-slate-200/60 dark:border-slate-700/60 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" style="">
+<div class="text-current w-6 h-6 flex items-center justify-center">
+<svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"></path>
+</svg>
+</div>
+<span class="text-[16px] tracking-wide" style="">Entrar com Google</span>
+</button>
+<div class="text-center pt-4">
+<p class="text-[13px] font-medium text-slate-500 dark:text-slate-400" style="">
+                    Ao continuar, você concorda com nossos <br/>
+<a class="underline underline-offset-2 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="#" style="">Termos de Serviço</a> e <a class="underline underline-offset-2 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="#" style="">Privacidade</a>
+</p>
+</div>
+</div>
+</main>
+
+</body></html>

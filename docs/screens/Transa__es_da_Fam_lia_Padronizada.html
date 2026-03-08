@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heritage Lista de Transações</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981",
+                        "background-light": "#f8f9fa",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light font-display text-slate-900 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col pb-24">
+<div class="flex items-center justify-between p-4 sticky top-0 z-10 bg-background-light/80 backdrop-blur-md border-b border-slate-200">
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-slate-100 text-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[24px]">chevron_left</span>
+</button>
+<h2 class="text-xl font-bold tracking-tight">🏛️ Heritage</h2>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[24px]">dark_mode</span>
+</button>
+<img alt="Vagner Profile" class="h-10 w-10 rounded-full border border-white shadow-sm object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ"/>
+</div>
+</div>
+<div class="px-4 py-3">
+<div class="flex h-12 w-full items-center justify-between rounded-full bg-slate-200/50 p-1 backdrop-blur-sm border border-white shadow-inner">
+<label class="relative flex h-full flex-1 cursor-pointer items-center justify-center rounded-full text-sm font-medium transition-all has-[:checked]:bg-white has-[:checked]:text-primary has-[:checked]:shadow-sm text-slate-500 hover:text-slate-700" style="">
+<span class="truncate z-10" style="">Pessoal</span>
+<input class="invisible absolute" name="profile-toggle" type="radio" value="Pessoal"/>
+</label>
+<label class="relative flex h-full flex-1 cursor-pointer items-center justify-center rounded-full text-sm font-medium transition-all has-[:checked]:bg-white has-[:checked]:text-primary has-[:checked]:shadow-sm text-slate-500 hover:text-slate-700" style="">
+<span class="truncate z-10" style="">Família</span>
+<input checked="" class="invisible absolute" name="profile-toggle" type="radio" value="Família"/>
+</label>
+</div>
+</div>
+<div class="px-4 pt-4 pb-2">
+<h1 class="text-2xl font-bold text-slate-900" style="">Transações da Família</h1>
+</div><div class="px-4 py-2 mb-2 flex items-center justify-between">
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">chevron_left</span>
+</button>
+<span class="text-base font-semibold text-slate-800" style="">Outubro 2023</span>
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">chevron_right</span>
+</button>
+</div>
+<div class="px-4 py-2 flex flex-col gap-3">
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined text-[24px]" style="">shopping_cart</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Supermercado</p>
+<p class="text-xs text-slate-500" style="">24 Out, 10:30</p>
+</div>
+</div>
+<div class="text-right flex flex-col items-end gap-1">
+<p class="text-sm font-bold text-slate-900" style="">- R$ 850,00</p>
+<span class="material-symbols-outlined text-[18px] text-emerald-500" style="">check_circle</span>
+</div>
+</div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-2 mt-1">
+<span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20" style="">Família</span>
+<span class="text-[11px] text-slate-400" style="">Pago com Cartão Conjunto</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined text-[24px]" style="">restaurant</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Restaurante</p>
+<p class="text-xs text-slate-500" style="">22 Out, 20:15</p>
+</div>
+</div>
+<div class="text-right flex flex-col items-end gap-1">
+<p class="text-sm font-bold text-slate-900" style="">- R$ 180,00</p>
+<span class="material-symbols-outlined text-[18px] text-emerald-500" style="">check_circle</span>
+</div>
+</div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-2 mt-1">
+<span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-[10px] font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20" style="">Pessoal</span>
+<span class="text-[11px] text-slate-400" style="">Pago com Cartão Vagner</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined text-[24px]" style="">bolt</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Conta de Luz</p>
+<p class="text-xs text-slate-500" style="">20 Out, 09:00</p>
+</div>
+</div>
+<div class="text-right flex flex-col items-end gap-1">
+<p class="text-sm font-bold text-slate-900" style="">- R$ 320,00</p>
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="">schedule</span>
+</div>
+</div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-2 mt-1">
+<span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20" style="">Família</span>
+<span class="text-[11px] text-slate-400 text-amber-600" style="">Vencimento em 3 dias</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined text-[24px]" style="">fitness_center</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Mensalidade Academia</p>
+<p class="text-xs text-slate-500" style="">15 Out, 07:00</p>
+</div>
+</div>
+<div class="text-right flex flex-col items-end gap-1">
+<p class="text-sm font-bold text-slate-900" style="">- R$ 120,00</p>
+<span class="material-symbols-outlined text-[18px] text-emerald-500" style="">check_circle</span>
+</div>
+</div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-2 mt-1">
+<span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-[10px] font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20" style="">Pessoal</span>
+<span class="text-[11px] text-slate-400" style="">Débito Automático</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined text-[24px]" style="">directions_car</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Oficina Mecânica</p>
+<p class="text-xs text-slate-500" style="">10 Out, 14:20</p>
+</div>
+</div>
+<div class="text-right flex flex-col items-end gap-1">
+<p class="text-sm font-bold text-slate-900" style="">- R$ 1.200,00</p>
+<span class="material-symbols-outlined text-[18px] text-emerald-500" style="">check_circle</span>
+</div>
+</div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-2 mt-1">
+<span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20" style="">Família</span>
+<span class="text-[11px] text-slate-400" style="">Pago com PIX</span>
+</div>
+</div>
+</div>
+<button class="fixed bottom-24 left-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-lg border border-slate-200 hover:bg-slate-200 transition-all active:scale-95" style="">
+<span class="material-symbols-outlined text-[28px]" style='font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;'>delete</span>
+</button><button class="fixed bottom-24 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-xl shadow-primary/30 hover:bg-emerald-600 transition-all active:scale-95" style="">
+<span class="material-symbols-outlined text-[32px]" style="">add</span>
+</button><div class="fixed bottom-0 left-0 right-0 z-50 flex h-20 w-full items-center justify-around border-t border-slate-200 bg-white/90 backdrop-blur-md pb-safe">
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">home</span>
+<span class="text-[10px] font-medium tracking-wide">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span class="text-[10px] font-semibold tracking-wide">Transações</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">flag</span>
+<span class="text-[10px] font-medium tracking-wide">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">auto_awesome</span>
+<span class="text-[10px] font-medium tracking-wide">IA</span>
+</a>
+</div>
+</div>
+</body></html>

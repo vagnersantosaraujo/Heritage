@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Editar Despesa - Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald Green for this theme
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .active-icon { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen font-display">
+<!-- Header -->
+<header class="flex items-center justify-between px-4 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" style="">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300" style="">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight flex items-center gap-2" style="">
+<span class="" style="">🏛️</span> Heritage
+            </h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" style="">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300" style="">dark_mode</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmNS-CfIA4H-DdVufU9-N8b-GFOJpkZ3MuWEqtufsaSv1S3U2wguMmu8bk7V0zEdRoOTLZMEehnays5B6pWLgrlqbX-jfFo3Aug2aZ5RIv_3MKRxSLN6rhGnMgELa9oSUlN3XXlV9RTBQQrLTLgst9Z-giCZseaf-y_g6THvUlKlzCELsBCY-uAz9aMFP2ZrIpQEk4_L127jm2P1m8EaFNCEVSyXhQzKl41x4jUn2I3xO7huYCdwMaZY9a5sJ-JUe4DlgMyCDd68E" style="">
+</div>
+</div>
+</header>
+<main class="px-4 pb-24">
+<h2 class="text-2xl font-bold mt-4 mb-6" style="">Editar Transação</h2>
+<form class="space-y-6">
+<!-- Amount Input -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1" style="">Valor</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-slate-400" style="">R$</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all text-lg font-bold" type="text" value="150,00">
+</div>
+</div>
+<!-- Title Input -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1" style="">Título da Despesa</label>
+<input class="w-full px-4 py-4 rounded-xl border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all" type="text" value="Supermercado">
+</div>
+<!-- Category -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1" style="">Categoria</label>
+<div class="relative">
+<select class="w-full px-4 py-4 rounded-xl border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 appearance-none focus:ring-2 focus:ring-primary focus:border-primary transition-all">
+<option selected="">Alimentação</option>
+<option>Moradia</option>
+<option>Transporte</option>
+<option>Lazer</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400" style="">expand_more</span>
+</div>
+</div>
+<!-- Paid By Selection -->
+<div class="flex flex-col gap-3">
+<label class="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1" style="">Pago por</label>
+<div class="flex gap-4">
+<label class="flex-1 cursor-pointer group" style="">
+<input checked="" class="hidden peer" name="paid_by" type="radio">
+<div class="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-transparent bg-white dark:bg-slate-900 peer-checked:border-primary peer-checked:bg-primary/5 transition-all">
+<img alt="Vagner" class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of a young man with a beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvSV8chNFQCVg9hwN3_w_jA1G3cPm2LXO_twYe3vFSLZSMsFE0IczINft1nXvWF3KW0pGUiEMLcpk2vsa2ZY_uWXXpIEor5OfHPg9PvBgiQIRrwa0SbIozu_sExfdGzbZMYobUQg2wHlmaY9vPeB0aaUf3hEKq-Hhq09-jvOEV0PGmZ7MRzWTBwcnkzhoWQdtuM5Glkc8vU3KKMB_r3lSZ-hfkeg3VXvCMk3ChrLEmwXkAPg72BK-oyPlTgNbAgcWpMulfvA5CFR8" style="">
+<span class="text-sm font-medium" style="">Vagner</span>
+</div>
+</label>
+<label class="flex-1 cursor-pointer group" style="">
+<input class="hidden peer" name="paid_by" type="radio">
+<div class="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-transparent bg-white dark:bg-slate-900 peer-checked:border-primary peer-checked:bg-primary/5 transition-all">
+<img alt="Soane" class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of a woman with long hair smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdbpGlx36ZabIQXTnJkrPGQ7uL9XYxm5IGT6cV42wAn1lCowa7nogoGHpQU1GPn67MA9wyoy7MQBhx_JM4yY1khDXcXx0Qu_KUlVmZblPQlAx-K8rxNdtmXEPQPs6biS_VjDsPMCurv3_08i_Rbdd69OIEQalT3f1QCFKAeBj77vjgXtGoYf2oKsaTDKESkjVVIFzdpfqY_x3hY2teIHi1rTXoRB2o-cA6F80XQjeNlHSBQ9bBq_rX6eUeV_rMAoLNhLIp_9C1BAY" style="">
+<span class="text-sm font-medium" style="">Soane</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Split Method -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1" style="">Divisão</label>
+<div class="flex p-1 bg-slate-200 dark:bg-slate-800 rounded-xl">
+<button class="flex-1 py-2 text-sm font-medium rounded-lg bg-white dark:bg-slate-700 shadow-sm" type="button" style="">50/50</button>
+<button class="flex-1 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400" type="button" style="">60/40</button>
+<button class="flex-1 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400" type="button" style="">Fixo</button>
+</div>
+</div>
+<!-- Expense Type Toggle -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="">family_restroom</span>
+<span class="font-medium" style="">Gasto Familiar</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer" style="">
+<input checked="" class="sr-only peer" type="checkbox" value="">
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-3 pt-4">
+<button class="w-full py-4 rounded-xl bg-primary text-white font-bold text-lg hover:brightness-110 active:scale-[0.98] transition-all" type="submit" style="">
+                    Salvar&nbsp;Transação</button>
+<button class="w-full py-3 text-slate-500 dark:text-slate-400 font-medium hover:text-slate-700 dark:hover:text-slate-200 transition-colors" type="button" style="">
+                    Cancelar
+                </button>
+</div>
+</form>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#" style="">
+<span class="material-symbols-outlined" style="">home</span>
+<span class="text-[10px] font-bold tracking-wider" style="">INÍCIO</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#" style="">
+<span class="material-symbols-outlined" style="">swap_horiz</span>
+<span class="text-[10px] font-bold tracking-wider" style="">TRANSAÇÕES</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#" style="">
+<span class="material-symbols-outlined" style="">flag</span>
+<span class="text-[10px] font-bold tracking-wider" style="">METAS</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#" style="">
+<span class="material-symbols-outlined" style="">auto_awesome</span>
+<span class="text-[10px] font-bold tracking-wider" style="">IA</span>
+</a>
+</nav>
+</body></html>

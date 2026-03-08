@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Editar Meta Familiar - Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "emerald-custom": "#10b981",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between"><div class="flex items-center gap-2">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">arrow_back</span>
+</button>
+<div class="flex items-center gap-1">
+<span class="text-xl">🏛️</span>
+<h1 class="text-lg font-bold tracking-tight text-primary">Heritage</h1>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">light_mode</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">account_circle</span>
+</button>
+</div></div>
+</header>
+<main class="flex-1 max-w-md mx-auto w-full px-4 py-6">
+<div class="mb-8">
+<h2 class="text-2xl font-bold mb-1">Editar Meta Familiar</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Ajuste os detalhes da meta para Vagner e Soane</p>
+</div>
+<div class="space-y-6">
+<!-- Progress Section -->
+<div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex justify-between items-end mb-3">
+<div>
+<p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Progresso Atual</p>
+<p class="text-2xl font-bold text-emerald-custom">65%</p>
+</div>
+<div class="text-right">
+<p class="text-xs text-slate-400">R$ 19.500 de R$ 30.000</p>
+</div>
+</div>
+<div class="w-full bg-primary/10 rounded-full h-3">
+<div class="h-3 rounded-full bg-emerald-custom" style="width: 65%"></div>
+</div>
+</div>
+<!-- Form Fields -->
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Título da Meta</label>
+<input class="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-primary/10 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Ex: Reforma da Casa" type="text" value="Viagem Japão"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Meta Total (R$)</label>
+<input class="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-primary/10 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="0,00" type="text" value="30.000,00"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Contrib. Vagner</label>
+<input class="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-primary/10 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="0,00" type="text" value="1.200,00"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Contrib. Soane</label>
+<input class="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-primary/10 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="0,00" type="text" value="1.200,00"/>
+</div>
+</div>
+</div>
+<button class="w-full bg-emerald-custom hover:bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition-all active:scale-[0.98] mt-4">
+                Salvar Alterações
+            </button>
+</div>
+</main>
+<nav class="sticky bottom-0 bg-white dark:bg-slate-900 border-t border-primary/10 pb-6 pt-2">
+<div class="max-w-md mx-auto px-6 flex justify-between items-center"><a class="flex flex-col items-center gap-1 text-slate-400 hover:text-emerald-custom transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-emerald-custom transition-colors" href="#">
+<span class="material-symbols-outlined">swap_horiz</span>
+<span class="text-[10px] font-bold uppercase">Transações</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-emerald-custom" href="#">
+<span class="material-symbols-outlined fill-1">flag</span>
+<span class="text-[10px] font-bold uppercase">Metas</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-emerald-custom transition-colors" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="text-[10px] font-bold uppercase">IA</span>
+</a></div>
+</nav>
+</body></html>

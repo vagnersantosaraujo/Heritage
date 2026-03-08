@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Heritage Adicionar Despesa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981",
+                        "background-light": "#f8f9fa",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light font-display text-slate-900 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col pb-24">
+<div class="flex items-center justify-between p-4 sticky top-0 z-10 bg-background-light/80 backdrop-blur-md border-b border-slate-200">
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" style="">
+<span class="material-symbols-outlined text-[20px] ml-1" style="">arrow_back_ios</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="text-2xl" style="">🏛️</span>
+<span class="text-xl font-bold tracking-tight text-slate-800" style="">Heritage</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 hover:bg-slate-100 transition-colors" style="">
+<span class="material-symbols-outlined" style="">dark_mode</span>
+</button>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-white shadow-sm">
+<img alt="Profile" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ" style="">
+</div>
+</div>
+</div>
+<div class="px-4 py-6 flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-slate-500 uppercase tracking-wider pl-2" style="">Valor (R$)</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-medium" style="">R$</span>
+<input class="w-full rounded-2xl border-0 bg-white py-4 pl-12 pr-4 text-2xl font-bold text-slate-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] ring-1 ring-inset ring-slate-200/60 focus:ring-2 focus:ring-inset focus:ring-primary backdrop-blur-md" placeholder="0,00" type="number">
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-slate-500 uppercase tracking-wider pl-2" style="">Título da Despesa</label>
+<input class="w-full rounded-2xl border-0 bg-white py-4 px-4 text-base font-medium text-slate-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] ring-1 ring-inset ring-slate-200/60 focus:ring-2 focus:ring-inset focus:ring-primary backdrop-blur-md placeholder:text-slate-400" placeholder="Ex: Supermercado" type="text">
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-slate-500 uppercase tracking-wider pl-2" style="">Categoria</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 material-symbols-outlined" style="">category</span>
+<select class="w-full appearance-none rounded-2xl border-0 bg-white py-4 pl-12 pr-10 text-base font-medium text-slate-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] ring-1 ring-inset ring-slate-200/60 focus:ring-2 focus:ring-inset focus:ring-primary backdrop-blur-md">
+<option disabled="" selected="" value="">Selecione uma categoria</option>
+<option value="alimentacao">Alimentação</option>
+<option value="moradia">Moradia</option>
+<option value="transporte">Transporte</option>
+<option value="saude">Saúde</option>
+<option value="lazer">Lazer</option>
+</select>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 material-symbols-outlined pointer-events-none" style="">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-sm font-bold text-slate-500 uppercase tracking-wider pl-2" style="">Quem pagou?</label>
+<div class="flex gap-4">
+<label class="flex flex-col items-center gap-2 cursor-pointer flex-1" style="">
+<input checked="" class="peer sr-only" name="quem_pagou" type="radio">
+<div class="h-16 w-16 rounded-full border-4 border-transparent peer-checked:border-primary transition-colors overflow-hidden relative shadow-sm">
+<img alt="Vagner" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ" style="">
+</div>
+<span class="text-sm font-medium text-slate-600 peer-checked:text-primary peer-checked:font-bold" style="">Vagner</span>
+</label>
+<label class="flex flex-col items-center gap-2 cursor-pointer flex-1" style="">
+<input class="peer sr-only" name="quem_pagou" type="radio">
+<div class="h-16 w-16 rounded-full border-4 border-transparent peer-checked:border-primary transition-colors overflow-hidden relative shadow-sm">
+<img alt="Soane" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhaa-DVWv4_oGHwDZ2vOV9t66YhjICDHHgGBfTr_2gvIeqjD4m7CbshXq31luPH5RsQumsCcOj74e0OZavSiho_gPBSrkJis9julHAHFUVgoZsd_VeT3Qx9rz-lB0i6GhDXFxN5plGVeD6Dud6M9uyWAJgi1RG_x90fM-1BBB63QgAopU57QDjtpGvJo2jUCoQzdPzsvAkPX1b1KmuR3J855pWmAEs-awATXKNEYMrqmCHxxrNw2dVVBQfCXNNoOGDqjUpmpF1z_Y" style="">
+</div>
+<span class="text-sm font-medium text-slate-600 peer-checked:text-primary peer-checked:font-bold" style="">Soane</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-sm font-bold text-slate-500 uppercase tracking-wider pl-2" style="">Como dividir?</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer" style="">
+<input checked="" class="peer sr-only" name="divisao" type="radio">
+<div class="flex flex-col items-center justify-center py-3 rounded-2xl bg-white border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-slate-500 peer-checked:text-primary transition-all shadow-sm">
+<span class="font-bold" style="">50/50</span>
+</div>
+</label>
+<label class="cursor-pointer" style="">
+<input class="peer sr-only" name="divisao" type="radio">
+<div class="flex flex-col items-center justify-center py-3 rounded-2xl bg-white border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-slate-500 peer-checked:text-primary transition-all shadow-sm">
+<span class="font-bold" style="">60/40</span>
+</div>
+</label>
+<label class="cursor-pointer" style="">
+<input class="peer sr-only" name="divisao" type="radio">
+<div class="flex flex-col items-center justify-center py-3 rounded-2xl bg-white border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-slate-500 peer-checked:text-primary transition-all shadow-sm">
+<span class="font-bold text-sm" style="">Valor Fixo</span>
+</div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 rounded-2xl bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-200/60 backdrop-blur-md mt-2">
+<div class="flex flex-col">
+<span class="text-sm font-bold text-slate-800" style="">Tipo de Despesa</span>
+<span class="text-xs text-slate-500" id="tipo-despesa-label" style="">Família</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer" style="">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<button class="mt-4 w-full rounded-2xl bg-primary py-4 text-lg font-bold text-white shadow-lg shadow-primary/30 active:scale-[0.98] transition-all" style="">
+    Salvar Transação</button>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-50 flex h-20 w-full items-center justify-around border-t border-slate-200 bg-white/90 backdrop-blur-md pb-safe">
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 0;">home</span>
+<span class="text-[10px] font-medium tracking-wide" style="">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 1;">sync_alt</span>
+<span class="text-[10px] font-medium tracking-wide" style="">Transações</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 0;">flag</span>
+<span class="text-[10px] font-medium tracking-wide" style="">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 0;">auto_awesome</span>
+<span class="text-[10px] font-medium tracking-wide" style="">IA</span>
+</a>
+</div>
+</div>
+</body></html>

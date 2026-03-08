@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heritage Assistente IA Gemini</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#10b981",
+            "background-light": "#f8f9fa",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light font-display text-slate-900 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col pb-36 bg-gradient-to-br from-slate-50 to-emerald-50/30">
+<div class="flex items-center justify-between p-4 sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-slate-200">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center text-slate-600 hover:text-slate-900 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="text-2xl">🏛️</span>
+<h2 class="text-xl font-bold tracking-tight text-slate-800">Heritage</h2>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[24px]">dark_mode</span>
+</button>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-slate-200 shadow-sm">
+<img alt="Vagner" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6 px-4 py-6 w-full max-w-2xl mx-auto">
+<div class="flex w-full justify-end">
+<div class="bg-blue-50 text-slate-800 rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-[85%] border border-blue-100/50">
+<p class="text-sm">Como estão nossos gastos este mês comparado ao anterior?</p>
+</div>
+</div>
+<div class="flex w-full justify-start gap-2">
+<div class="h-8 w-8 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 border border-emerald-200">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">auto_awesome</span>
+</div>
+<div class="bg-white/80 backdrop-blur-sm text-slate-800 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm max-w-[85%] border border-white/50">
+<p class="text-sm">Analisando os dados, os gastos totais deste mês estão 12% menores que o mês passado. Vocês economizaram principalmente em 'Lazer' e 'Alimentação fora'.</p>
+</div>
+</div>
+<div class="flex w-full justify-end">
+<div class="bg-blue-50 text-slate-800 rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-[85%] border border-blue-100/50">
+<p class="text-sm">Pode me mostrar o resumo de gastos: Vagner vs Soane?</p>
+</div>
+</div>
+<div class="flex w-full justify-start gap-2">
+<div class="h-8 w-8 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 border border-emerald-200">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">auto_awesome</span>
+</div>
+<div class="bg-white/80 backdrop-blur-md text-slate-800 rounded-2xl rounded-tl-sm px-4 py-4 shadow-sm max-w-[90%] border border-slate-100 flex flex-col gap-4">
+<p class="text-sm">Claro! Aqui está o resumo das despesas individuais e o total conjunto deste mês:</p>
+<div class="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm">
+<div class="bg-slate-50 py-2 px-3 border-b border-slate-200">
+<span class="text-xs font-bold text-slate-600 uppercase tracking-wider">Resumo de Gastos: Vagner vs Soane</span>
+</div>
+<table class="w-full text-left text-sm">
+<thead>
+<tr class="border-b border-slate-100 text-slate-500">
+<th class="py-2 px-3 font-medium">Membro</th>
+<th class="py-2 px-3 font-medium text-right">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-slate-50">
+<td class="py-2 px-3 flex items-center gap-2">
+<div class="h-6 w-6 rounded-full overflow-hidden">
+<img alt="Vagner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ"/>
+</div>
+                    Vagner
+                  </td>
+<td class="py-2 px-3 text-right font-medium text-slate-700">R$ 2.450,00</td>
+</tr>
+<tr class="border-b border-slate-50">
+<td class="py-2 px-3 flex items-center gap-2">
+<div class="h-6 w-6 rounded-full overflow-hidden">
+<img alt="Soane" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhaa-DVWv4_oGHwDZ2vOV9t66YhjICDHHgGBfTr_2gvIeqjD4m7CbshXq31luPH5RsQumsCcOj74e0OZavSiho_gPBSrkJis9julHAHFUVgoZsd_VeT3Qx9rz-lB0i6GhDXFxN5plGVeD6Dud6M9uyWAJgi1RG_x90fM-1BBB63QgAopU57QDjtpGvJo2jUCoQzdPzsvAkPX1b1KmuR3J855pWmAEs-awATXKNEYMrqmCHxxrNw2dVVBQfCXNNoOGDqjUpmpF1z_Y"/>
+</div>
+                    Soane
+                  </td>
+<td class="py-2 px-3 text-right font-medium text-slate-700">R$ 1.820,00</td>
+</tr>
+<tr class="bg-slate-50/50">
+<td class="py-2 px-3 font-bold text-slate-700">Total Conjunto</td>
+<td class="py-2 px-3 text-right font-bold text-primary">R$ 4.270,00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex flex-col gap-2 mt-2">
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Evolução Diária</span>
+<div class="h-32 w-full rounded-xl border border-slate-200 bg-white/50 p-3 flex items-end gap-1 relative overflow-hidden">
+<svg class="w-full h-full preserve-aspect-ratio-none stroke-primary" fill="none" stroke-width="2" viewbox="0 0 100 40">
+<path d="M0,35 C10,32 20,10 30,15 C40,20 50,5 60,10 C70,15 80,30 90,25 C100,20 100,20 100,20" vector-effect="non-scaling-stroke"></path>
+<path d="M0,35 C10,32 20,10 30,15 C40,20 50,5 60,10 C70,15 80,30 90,25 C100,20 100,20 100,20 L100,40 L0,40 Z" fill="rgba(16, 185, 129, 0.1)" stroke="none"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-20 left-0 right-0 z-40 px-4 py-3 bg-white/80 backdrop-blur-md border-t border-slate-200/50 pb-safe">
+<div class="max-w-2xl mx-auto flex items-center gap-3 bg-white rounded-full pl-4 pr-2 py-2 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-slate-200/60">
+<span class="material-symbols-outlined text-slate-400">auto_awesome</span>
+<input class="flex-1 bg-transparent border-0 focus:ring-0 p-0 text-slate-700 placeholder-slate-400 text-sm outline-none" placeholder="Pergunte ao Heritage..." type="text"/>
+<button class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white shadow-md shadow-primary/30 hover:bg-primary/90 transition-transform active:scale-95 shrink-0">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-50 flex h-20 w-full items-center justify-around border-t border-slate-200 bg-white/90 backdrop-blur-md pb-safe">
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="text-[10px] font-medium tracking-wide">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">sync_alt</span>
+<span class="text-[10px] font-medium tracking-wide">Transações</span>
+</a>
+<div class="w-14"></div>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 0;">flag</span>
+<span class="text-[10px] font-medium tracking-wide">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-[10px] font-bold tracking-wide">IA</span>
+</a>
+</div>
+</div>
+</body></html>

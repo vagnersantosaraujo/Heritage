@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Preferências de Notificação - Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between p-4 h-16 max-w-lg mx-auto w-full">
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" style="">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300" style="">chevron_left</span>
+</button>
+<span class="text-xl font-bold text-primary flex items-center gap-1" style="">🏛️ <span class="hidden sm:inline" style="">Heritage</span></span>
+</div>
+<h1 class="text-md font-bold tracking-tight text-slate-900 dark:text-white" style="">Notificações</h1>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" style="">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300" style="">dark_mode</span>
+</button>
+<div class="size-8 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden border border-slate-200 dark:border-slate-700">
+<img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcfv_okpLqHgZs6ZFlHmeorbIWu6WhLOnlstiWUfoebF6fNElx-6WGEggbehrUrUTcgj4zKHyGKEjnssWVo-GMWiacfb8nnbQEo-P-HG-rOSOwnUdUVgfPd_ClG9thXsmjZHdy22Ukpk2qt31QyOVcI9ncfuN8VdCDhLhLSNMEhkX9WF6FaKrbZ1Kx0puSM69I8I9zbbYiKoBYxyMREwApQPZfWnksJJ_kzbH81TK0bb96GnSRQkMxRnr0n2PwIbQEA2rEMkO4YHA" style="">
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 max-w-lg mx-auto w-full pb-24">
+<!-- Account Activity Section -->
+<section class="mt-6 px-4">
+<h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3 ml-1" style="">Atividade da Conta</h2>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+<!-- Toggle Item -->
+<div class="flex items-center justify-between p-4 border-b border-slate-50 dark:border-slate-800">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="">payments</span>
+</div>
+<div>
+<p class="font-medium" style="">Depósitos e Saques</p>
+<p class="text-xs text-slate-500 dark:text-slate-400" style="">Movimentações em tempo real</p>
+</div>
+</div>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-700 p-1 transition-colors has-[:checked]:bg-primary" style="">
+<input checked="" class="peer sr-only" type="checkbox">
+<div class="h-5 w-5 rounded-full bg-white shadow-sm transition-all peer-checked:translate-x-5"></div>
+</label>
+</div>
+<!-- Toggle Item -->
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="">barcode_scanner</span>
+</div>
+<div>
+<p class="font-medium" style="">Pagamentos de Boletos</p>
+<p class="text-xs text-slate-500 dark:text-slate-400" style="">Confirmações e vencimentos</p>
+</div>
+</div>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-700 p-1 transition-colors has-[:checked]:bg-primary" style="">
+<input checked="" class="peer sr-only" type="checkbox">
+<div class="h-5 w-5 rounded-full bg-white shadow-sm transition-all peer-checked:translate-x-5"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Reports & Insights Section -->
+<section class="mt-8 px-4">
+<h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3 ml-1" style="">Relatórios e Insights</h2>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="flex items-center justify-between p-4 border-b border-slate-50 dark:border-slate-800">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="">monitoring</span>
+</div>
+<p class="font-medium" style="">Resumo Semanal</p>
+</div>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-700 p-1 transition-colors has-[:checked]:bg-primary" style="">
+<input class="peer sr-only" type="checkbox">
+<div class="h-5 w-5 rounded-full bg-white shadow-sm transition-all peer-checked:translate-x-5"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="">tips_and_updates</span>
+</div>
+<p class="font-medium" style="">Dicas de Investimento</p>
+</div>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-700 p-1 transition-colors has-[:checked]:bg-primary" style="">
+<input checked="" class="peer sr-only" type="checkbox">
+<div class="h-5 w-5 rounded-full bg-white shadow-sm transition-all peer-checked:translate-x-5"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Security Section -->
+<section class="mt-8 px-4">
+<h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3 ml-1" style="">Segurança</h2>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="flex items-center justify-between p-4 border-b border-slate-50 dark:border-slate-800">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="">key</span>
+</div>
+<p class="font-medium" style="">Logins em Novos Dispositivos</p>
+</div>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-700 p-1 transition-colors has-[:checked]:bg-primary" style="">
+<input checked="" class="peer sr-only" disabled="" type="checkbox">
+<div class="h-5 w-5 rounded-full bg-white shadow-sm transition-all peer-checked:translate-x-5"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="">shield_person</span>
+</div>
+<p class="font-medium" style="">Alteração de Senha</p>
+</div>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-700 p-1 transition-colors has-[:checked]:bg-primary" style="">
+<input checked="" class="peer sr-only" disabled="" type="checkbox">
+<div class="h-5 w-5 rounded-full bg-white shadow-sm transition-all peer-checked:translate-x-5"></div>
+</label>
+</div>
+</div>
+<p class="mt-3 px-1 text-[10px] text-slate-400 dark:text-slate-500 italic" style="">Notificações de segurança são obrigatórias para sua proteção.</p>
+</section>
+</main>
+<!-- Floating Action Button -->
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-20 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 pb-safe-area-inset-bottom">
+<div class="flex items-center justify-around h-20 max-w-lg mx-auto px-2 gap-4">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center gap-1 w-16 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">home</span>
+<span class="text-[10px] font-medium" style="">Início</span>
+</a>
+<!-- Transactions -->
+<a class="flex flex-col items-center justify-center gap-1 w-16 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">swap_horiz</span>
+<span class="text-[10px] font-medium" style="">Transações</span>
+</a>
+<!-- Add Button (Central) -->
+<!-- Goals -->
+<a class="flex flex-col items-center justify-center gap-1 w-16 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">flag</span>
+<span class="text-[10px] font-medium" style="">Metas</span>
+</a>
+<!-- AI Sparkle -->
+<a class="flex flex-col items-center justify-center gap-1 w-16 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">auto_awesome</span>
+<span class="text-[10px] font-medium" style="">IA</span>
+</a>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald Green for Heritage highlights
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen pb-24">
+<!-- Header -->
+<header class="sticky top-0 z-50 glass px-6 py-4 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-2"><button class="mr-1 p-1 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors flex items-center justify-center">
+<span class="text-slate-600 dark:text-slate-400 text-xl font-light leading-none">&lt;</span>
+</button>
+<span class="text-2xl" style="">🏛️</span>
+<h1 class="text-xl font-bold tracking-tight" style="">Contas  Conectadas</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors" style="">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400" style="">dark_mode</span>
+</button>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="Vagner Profile" class="w-full h-full object-cover" data-alt="User profile photo of a man named Vagner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH9VPc41VXV4mVQbdS8uOLOiLAVjV-jMbhGao8YIhtHUf2dOzeN0PsJoUeQivC6tkvTF_Kejvjwiguj7U5lHnYpIBqXzVo-kqtcARjQdrM6GOhkDYFOpZ27jPetlF9qSEB1lObV4g5cHgqNbS86UvP-Z6ABiNCj57PzcA3j6dHU9X_Exh0l3k1trpVkWX1bTAEbjHtLourGJF5njsmqVX4cTFPZdpTU4y6tyAfPwkh1YLQ5tp_l1NPKR2ZX0mpKBwS77C_q7aNjQk" style=""/>
+</div>
+</div>
+</header>
+<main class="max-w-md mx-auto px-6 pt-8">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold" style=""><br/></h2>
+<span class="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider" style="">4 Bancos</span>
+</div>
+<!-- Bank List -->
+<div class="space-y-6">
+<!-- Nubank -->
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-5">
+<img class="w-12 h-12 object-contain rounded-lg bg-white shadow-sm" data-alt="Nubank purple bank logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr5ngukNrrBOmzEEwz8ejllPHvh-vJV15b7G5u7M-dXmxtB0AmsplmAH2uAhDAc1-A4pJJ6HE9t9Jh_eZXFvos-S0Ky7DCzsxVN86zmvR74TDb5tXwoQi4kWylQHLnW7VCvWwkaBoMMMhI7fscORNJAB60aKiLrOA5SHffNttIT5Zm1NeQ6nhgkw3S6BjttueWv53ptGckbUKML802ud7P3W5zyMB3Mkx2OnvOmNyy49N0NKTFQoebTguMngoPpKBfsZQZSI1J-Ew" style=""/>
+<div class="flex flex-col">
+<span class="font-semibold text-lg" style="">Nubank</span>
+<span class="text-xs text-slate-500 uppercase tracking-widest font-medium" style="">Conta Corrente</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-emerald-50 dark:bg-emerald-950/30 px-3 py-1 rounded-full"><div class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary">
+<span class="inline-block h-4 w-4 translate-x-6 transform rounded-full bg-white transition"></span>
+</div></div>
+</div>
+<!-- Itaú -->
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-5">
+<img class="w-12 h-12 object-contain rounded-lg bg-white shadow-sm" data-alt="Itau orange bank logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEXfOhI2YMPqmI0nN26qQTWdJqNl7X7xMQjYnmLBmW1Fe7CzNGpQH7It8kvjHZe_E697bLLupCzx0Uvr-3D-pYEUjlPPHSLa-EaatMA40jCIMUXkOSu6QWRo4AmzybDO7Hvz2pAO-8RDvJLbAgmYN7rKqOHsdWOpAAxwjCAqtbIJaxPi_PVeEyMFPHP8DH1AK_9JIMIMEjrU0BzbsNn--lBuHeI9h3BjuvFVo9nZ4jpoQgWULmJbE_lmGYunhiOpw9ysrGbsqBZXQ" style=""/>
+<div class="flex flex-col">
+<span class="font-semibold text-lg" style="">Itaú Personnalité</span>
+<span class="text-xs text-slate-500 uppercase tracking-widest font-medium" style="">Investimentos</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-emerald-50 dark:bg-emerald-950/30 px-3 py-1 rounded-full"><div class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary">
+<span class="inline-block h-4 w-4 translate-x-6 transform rounded-full bg-white transition"></span>
+</div></div>
+</div>
+<!-- Bradesco -->
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-5">
+<img class="w-12 h-12 object-contain rounded-lg bg-white shadow-sm" data-alt="Bradesco red bank logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfpn7sVExNmIONPAE_ZUfCGqSsDnQEDGMa7lspdkxlf0IQ831hm9X2ZCyaUnDav5YSMrJOdhBhJBallk675XY0tZNoHaDrTcw9CvnF5nOb4brfWqcTKEUgAs3uQ2TmUNab1rZyIz29XfQCkKlUA3V4TvUTbat7Ly1qogB8Jju58zsUhZ06Fu0ycItPC45OnK5L8lJfbcV4y40emQon31Dl6SxQ4e3iBnHl0zWGCiaPgHpocKulJs5xOhRS1_8DgUWN4pOdXdIC5go" style=""/>
+<div class="flex flex-col">
+<span class="font-semibold text-lg" style="">Bradesco</span>
+<span class="text-xs text-slate-500 uppercase tracking-widest font-medium" style="">Conta Poupança</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-emerald-50 dark:bg-emerald-950/30 px-3 py-1 rounded-full"><div class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary">
+<span class="inline-block h-4 w-4 translate-x-6 transform rounded-full bg-white transition"></span>
+</div></div>
+</div>
+<!-- Inter -->
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-5">
+<img class="w-12 h-12 object-contain rounded-lg bg-white shadow-sm" data-alt="Banco Inter orange bank logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqvdBpVTwMn8XfCt2ih6gAKTgBbvVXM8STzRvEiOGSXbuMbAWUdYCMsEG3mwMrlSzuzAf_Vr9jxpR1IP1Jn-AbSiKDaivWxYxz6KREBvFMZ9I7XvfCtuz-XxLoAf4_7Fs_I-i22EQPXZXnDApVZL33MO9aRi1lAwvW8mCPvkRS4537479v7xGz2cp93UPPkWqSx6WFa39Hb3ky_7Ys-3Jhvyc45HThntN9skXOCFK6hoLemY5-YOBYN-b4p3VatcmLFN4_sMok6h0" style=""/>
+<div class="flex flex-col">
+<span class="font-semibold text-lg" style="">Banco Inter</span>
+<span class="text-xs text-slate-500 uppercase tracking-widest font-medium" style="">Conta Digital</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-emerald-50 dark:bg-emerald-950/30 px-3 py-1 rounded-full"><div class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary">
+<span class="inline-block h-4 w-4 translate-x-6 transform rounded-full bg-white transition"></span>
+</div></div>
+</div>
+</div>
+<!-- Add New CTA -->
+</main>
+<!-- FAB -->
+<button class="fixed bottom-24 right-6 bg-primary text-white p-4 rounded-full shadow-lg shadow-primary/40 flex items-center justify-center z-50" style="">
+<span class="material-symbols-outlined text-3xl" style="">add</span>
+</button>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 glass border-t border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center z-40">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">home</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter" style="">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">swap_horiz</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter" style="">Transações</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">flag</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter" style="">Metas</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">auto_awesome</span>
+<span class="text-[10px] uppercase tracking-tighter font-medium" style="">IA</span>
+</a>
+</nav>
+</body></html>

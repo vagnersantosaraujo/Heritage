@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Heritage Ajustado</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald green based on description
+                        "background-light": "#f8f9fa", // off-white
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light font-display text-slate-900 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col pb-24">
+<div class="flex items-center justify-between p-4 sticky top-0 z-10 bg-background-light/80 backdrop-blur-md border-b border-slate-200"><button class="mr-2 text-slate-600 hover:text-slate-900 transition-colors" style=""><span class="text-2xl font-light leading-none">&lt;</span></button>
+<h2 class="text-xl font-bold tracking-tight" style="">🏛️ Painel Familiar</h2>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" style="">
+<span class="material-symbols-outlined text-[24px]" style="">dark_mode</span>
+</button>
+<img alt="Vagner Profile" class="h-10 w-10 rounded-full border border-white shadow-sm object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ" style=""/>
+</div>
+</div>
+<div class="px-4 py-3">
+<div class="flex h-12 w-full items-center justify-between rounded-full bg-slate-200/50 p-1 backdrop-blur-sm border border-white shadow-inner">
+<label class="relative flex h-full flex-1 cursor-pointer items-center justify-center rounded-full text-sm font-medium transition-all has-[:checked]:bg-white has-[:checked]:text-primary has-[:checked]:shadow-sm text-slate-500 hover:text-slate-700" style="">
+<span class="truncate z-10" style="">Pessoal</span>
+<input class="invisible absolute" name="profile-toggle" type="radio" value="Pessoal"/>
+</label>
+<label class="relative flex h-full flex-1 cursor-pointer items-center justify-center rounded-full text-sm font-medium transition-all has-[:checked]:bg-white has-[:checked]:text-primary has-[:checked]:shadow-sm text-slate-500 hover:text-slate-700" style="">
+<span class="truncate z-10" style="">Família</span>
+<input checked="" class="invisible absolute" name="profile-toggle" type="radio" value="Família"/>
+</label>
+</div>
+</div>
+<div class="px-4 py-4">
+<h3 class="text-lg font-bold text-slate-900 mb-3 px-1" style="">Custos da Casa</h3>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between rounded-xl bg-white p-4 shadow-sm border border-slate-100 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined" style="">home</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Aluguel</p>
+<p class="text-xs text-slate-500" style="">R$ 2.500,00</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20" style="">Pago (Vagner)</span>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-xl bg-white p-4 shadow-sm border border-slate-100 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined" style="">bolt</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Luz</p>
+<p class="text-xs text-slate-500" style="">R$ 320,00</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center rounded-md bg-amber-50 px-2 py-1 text-xs font-medium text-amber-700 ring-1 ring-inset ring-amber-600/20" style="">Pendente (Soane)</span>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-xl bg-white p-4 shadow-sm border border-slate-100 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined" style="">wifi</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Internet</p>
+<p class="text-xs text-slate-500" style="">R$ 150,00</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20" style="">Pago (Vagner)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 py-4">
+<h3 class="text-lg font-bold text-slate-900 mb-3 px-1" style="">Metas da Família</h3>
+<div class="flex flex-col gap-3">
+<div class="rounded-xl bg-white p-4 shadow-sm border border-slate-100 backdrop-blur-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+<span class="material-symbols-outlined text-[18px]" style="">flight_takeoff</span>
+</div>
+<span class="text-sm font-semibold text-slate-900" style="">Viagem Europa</span>
+</div>
+<span class="text-xs font-medium text-emerald-600" style="">65%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 65%;"></div>
+</div>
+<div class="flex justify-between mt-2 text-xs text-slate-500">
+<span class="" style="">R$ 13.000,00</span>
+<span class="" style="">R$ 20.000,00</span>
+</div>
+</div>
+<div class="rounded-xl bg-white p-4 shadow-sm border border-slate-100 backdrop-blur-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+<span class="material-symbols-outlined text-[18px]" style="">directions_car</span>
+</div>
+<span class="text-sm font-semibold text-slate-900" style="">Carro Novo</span>
+</div>
+<span class="text-xs font-medium text-blue-600" style="">30%</span>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+<div class="h-full rounded-full bg-blue-500" style="width: 30%;"></div>
+</div>
+<div class="flex justify-between mt-2 text-xs text-slate-500">
+<span class="" style="">R$ 15.000,00</span>
+<span class="" style="">R$ 50.000,00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 py-4">
+<h3 class="text-lg font-bold text-slate-900 mb-3 px-1" style="">Acerto de Contas</h3>
+<div class="flex flex-col gap-3">
+<div class="rounded-xl bg-white p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Soane" class="h-12 w-12 rounded-full object-cover border-2 border-white shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXIXdVZ3s7uyE3KKLi93CjXNJUs2KKI-hMauvQvXTZA50dFkeuTu90DT0KowCtu4OIK0Vk2KtGb76dUblg_OcaK7ry9Jbk-b6U2-uOj2Oq2O_DJg1arOvAqqaUoVLCkhRcDdauUhktQqSekZu2QaWvZOtwFYzLn90LdZ-moC7RdK9uCLOozoI2j82IOB8gMRdBgNMPX7W0ea0B6ZACgjieDMXwAULX9_rxUW4I_vyBWqdqZfdJyaS1XzxtYV_3pr1bEDez5Oc353c" style=""/>
+<div class="absolute -bottom-1 -right-1 h-5 w-5 rounded-full bg-amber-500 border-2 border-white flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[12px]" style="">arrow_outward</span>
+</div>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Soane deve a Vagner</p>
+<p class="text-lg font-bold text-amber-500" style="">R$ 450,00</p>
+</div>
+</div>
+<button class="px-3 py-1.5 bg-slate-100 text-slate-700 text-sm font-medium rounded-lg hover:bg-slate-200 transition-colors" style="">Cobrar</button>
+</div>
+<div class="rounded-xl bg-white p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Vagner" class="h-12 w-12 rounded-full object-cover border-2 border-white shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9etMasLdLxWBtSh83h2smHJ0lL02Sj10qE5rSgJ-MZp4MBjxnCZow0vjd_WGL0VSvJtKn49QiWj1c5XjX8guH_slWQxjpRMObwNyLd7422KbVMJSfpI4KzI0U0fs22xIcui9iqGmcOq9NuWNq01Ad7D9iP2zZVok0D01fHXh_hQwdcsOCo8M2ci6pKs8D9J2YeBd05itAiM9dtYJ7E2q5LTs9LmMRgQBDXAeWyMrAKn7RXQuEjL_j6TUom7xVsJ0urtCFD-29fQ" style=""/>
+<div class="absolute -bottom-1 -right-1 h-5 w-5 rounded-full bg-emerald-500 border-2 border-white flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[12px]" style="">call_received</span>
+</div>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900" style="">Vagner deve a Soane</p>
+<p class="text-lg font-bold text-emerald-500" style="">R$ 150,00</p>
+</div>
+</div>
+<button class="px-3 py-1.5 bg-slate-100 text-slate-700 text-sm font-medium rounded-lg hover:bg-slate-200 transition-colors" style="">Pagar</button>
+</div>
+</div>
+</div>
+<div class="px-4 py-2 mb-6">
+<h3 class="text-lg font-bold text-slate-900 mb-3 px-1" style="">Alocação de Patrimônio</h3>
+<div class="flex flex-col gap-4 rounded-xl bg-white p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-md">
+<div class="flex items-center justify-center py-4">
+<div class="relative flex h-40 w-40 items-center justify-center rounded-full" style="background: conic-gradient(from 0deg, #10b981 0% 60%, #3b82f6 60% 85%, #f59e0b 85% 100%);">
+<div class="absolute h-28 w-28 rounded-full bg-white flex items-center justify-center flex-col shadow-inner">
+<span class="text-xs text-slate-400 font-medium" style="">Total</span>
+<span class="text-sm font-bold text-slate-800" style="">R$ 18.450</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 mt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-emerald-500"></div>
+<span class="text-sm font-medium text-slate-700" style="">Investimentos</span>
+</div>
+<span class="text-sm font-semibold text-slate-900" style="">60%</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-blue-500"></div>
+<span class="text-sm font-medium text-slate-700" style="">Caixa</span>
+</div>
+<span class="text-sm font-semibold text-slate-900" style="">25%</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-amber-500"></div>
+<span class="text-sm font-medium text-slate-700" style="">Outros</span>
+</div>
+<span class="text-sm font-semibold text-slate-900" style="">15%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-24 right-6 z-50">
+<button class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/30 hover:bg-primary/90 transition-transform active:scale-95 border-4 border-white" style="">
+<span class="material-symbols-outlined text-[32px]" style="">add</span>
+</button>
+</div><div class="fixed bottom-0 left-0 right-0 z-50 flex h-20 w-full items-center justify-around border-t border-slate-200 bg-white/90 backdrop-blur-md pb-safe">
+<a class="flex flex-col items-center justify-center gap-1 hover:text-slate-600 transition-colors text-primary" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style='font-variation-settings: "FILL" 1;'>home</span>
+<span class="text-[10px] font-semibold tracking-wide" style="">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style='font-variation-settings: "FILL" 0;'>sync_alt</span>
+<span class="text-[10px] font-medium tracking-wide" style="">Transações</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style='font-variation-settings: "FILL" 0;'>flag</span>
+<span class="text-[10px] font-medium tracking-wide" style="">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-[28px]" style='font-variation-settings: "FILL" 0;'>auto_awesome</span>
+<span class="text-[10px] font-medium tracking-wide" style="">IA</span>
+</a>
+</div>
+</div>
+</body></html>

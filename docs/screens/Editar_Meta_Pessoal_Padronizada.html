@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "emerald-custom": "#10b981",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header Section -->
+<header class="flex items-center bg-white dark:bg-slate-900 p-4 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10">
+<div class="flex items-center gap-2">
+<button class="size-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">arrow_back</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="text-xl">🏛️</span>
+<h1 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">Heritage</h1>
+</div>
+</div>
+<div class="flex-1"></div>
+<div class="flex items-center gap-2">
+<button class="size-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">dark_mode</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full overflow-hidden border-2 border-slate-200 dark:border-slate-700">
+<img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWrwPcfWiuqLgcUpInrHCIFQshK9RWwNwOUFJZxOUWkxhw9LccrCNKBx0t9e9ksCVgTUS84ZCrvGms8z2bqeptpB0GmpDAbcwbJ7WmWtMhbtBEz6hag4iYmsj30dvkTEsnRoA7W0_RzIUqjf_pKv5qe13-EKgx-xy4hKxbLTZJEOc35QdNINMH2KFveFaj3xpNeN2XpbGlMiuwA60E5SlwWT0Xj7P5Glk1FBNwNIsZrhf8h60_eG-tOZjabEWxz5DHjZktinHWWaQ"/>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Title Section -->
+<div class="px-6 py-6">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Editar Meta</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Ajuste os detalhes dos seus planos, Vagner.</p>
+</div>
+<!-- Form Section -->
+<div class="px-6 space-y-5">
+<!-- Goal Title -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Título da Meta</label>
+<div class="relative">
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" type="text" value="Viagem para a Itália"/>
+</div>
+</div>
+<!-- Target Value -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Valor Alvo</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-medium">R$</span>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl pl-12 pr-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" type="text" value="15.000,00"/>
+</div>
+</div>
+<!-- Current Saved Amount -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Valor Guardado</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-medium">R$</span>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl pl-12 pr-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" type="text" value="4.500,00"/>
+</div>
+</div>
+<!-- Grid for Deadline and Category -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Prazo</label>
+<div class="relative">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400">calendar_today</span>
+<input class="w-full h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" type="text" value="12/12/2025"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Categoria</label>
+<select class="w-full h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all appearance-none">
+<option>Viagem</option>
+<option>Educação</option>
+<option>Reserva de Emergência</option>
+<option>Veículo</option>
+</select>
+</div>
+</div>
+<!-- Save Button -->
+<div class="pt-6">
+<button class="w-full h-14 bg-emerald-custom hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-custom/20 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">save</span>
+                    Salvar Alterações
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center z-20">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">home</span>
+<p class="text-[10px] font-bold text-slate-400 group-hover:text-primary uppercase">Início</p>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">swap_horiz</span>
+<p class="text-[10px] font-bold text-slate-400 group-hover:text-primary uppercase">Transações</p>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined material-symbols-fill text-emerald-custom">flag</span>
+<p class="text-[10px] font-bold text-emerald-custom uppercase">Metas</p>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">auto_awesome</span>
+<p class="text-[10px] font-bold text-slate-400 group-hover:text-primary uppercase">IA</p>
+</a>
+</nav>
+</body></html>

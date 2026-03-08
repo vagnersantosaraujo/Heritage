@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10B981", // Emerald Green as requested
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light text-slate-900 font-display">
+<div class="relative flex h-screen w-full max-w-[480px] mx-auto flex-col overflow-hidden bg-background-light">
+<!-- Header -->
+<header class="flex items-center justify-between px-4 py-4 bg-white/50 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined text-slate-600">arrow_back_ios_new</span>
+</button>
+<div class="flex items-center gap-1">
+<span class="text-xl">🏛️</span>
+<span class="font-bold text-lg tracking-tight text-slate-800">Heritage</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</button>
+<div class="size-10 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
+<img alt="Foto de perfil" class="w-full h-full object-cover" data-alt="User profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh8OD-Svz7xKz-pR8AaOp5WPPVNo3n098xtRvAcLOVFjIY0EigPBmwKXgjV5ntVzAG4ZUt8ZWf4o7yn_uoTqa-f-WRJOtIDYqalotFAg6c4Tnnfur2tpcUdBdznfCqsmzYS6Q3-t3k3vx_neB6ujzXA89ZEvPuqdFXmx_ESW5S0gQTw8rez_vr4Wkgxmhmg2NyN4D1-R191aVfmj3WgUNQPCiK5aBAx-plZFE01sUYzWjgZkPYouxsvsqXViX8o9WlYllak4FWUAQ"/>
+</div>
+</div>
+</header>
+<!-- Content -->
+<main class="flex-1 overflow-y-auto px-4 pt-6 pb-24">
+<div class="mb-8">
+<h1 class="text-2xl font-bold text-slate-900">Criar Nova Meta Pessoal</h1>
+<p class="text-slate-500 text-sm mt-1">Defina seus objetivos e acompanhe sua evolução.</p>
+</div>
+<form class="space-y-6">
+<!-- Goal Title -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 ml-1">Título da Meta</label>
+<div class="relative">
+<input class="w-full h-14 bg-white border border-slate-200 rounded-xl px-4 text-slate-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Ex: Viagem para a Itália" type="text"/>
+</div>
+</div>
+<!-- Target Amount -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 ml-1">Valor Objetivo (R$)</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 font-medium text-slate-400">R$</span>
+<input class="w-full h-14 bg-white border border-slate-200 rounded-xl pl-12 pr-4 text-slate-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="0,00" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Target Date -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 ml-1">Data Limite</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">calendar_today</span>
+<input class="w-full h-14 bg-white border border-slate-200 rounded-xl pl-12 pr-4 text-slate-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="DD/MM/AAAA" type="text"/>
+</div>
+</div>
+<!-- Category -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 ml-1">Categoria</label>
+<div class="relative">
+<select class="w-full h-14 bg-white border border-slate-200 rounded-xl px-4 text-slate-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+<option value="">Selecionar</option>
+<option value="viagem">Viagem</option>
+<option value="educacao">Educação</option>
+<option value="casa">Casa</option>
+<option value="veiculo">Veículo</option>
+<option value="outros">Outros</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Visual Card Preview (Sophisticated Touch) -->
+<div class="mt-8 p-6 rounded-xl bg-gradient-to-br from-primary to-emerald-600 text-white shadow-lg shadow-primary/20 relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-emerald-100 text-xs uppercase tracking-widest font-bold">Prévia da Meta</p>
+<h3 class="text-xl font-bold mt-2">Viagem para a Itália</h3>
+<div class="mt-6">
+<div class="flex justify-between items-end mb-2">
+<span class="text-2xl font-bold">R$ 0,00</span>
+<span class="text-xs text-emerald-100">Meta: R$ 15.000,00</span>
+</div>
+<div class="w-full bg-white/20 h-2 rounded-full overflow-hidden">
+<div class="bg-white h-full w-[2%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Abstract Background Pattern -->
+<div class="absolute -right-10 -bottom-10 size-40 bg-white/10 rounded-full blur-3xl"></div>
+</div>
+<button class="w-full h-14 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined">check_circle</span>
+                    Salvar Meta
+                </button>
+</form>
+</main>
+<!-- Floating Action Button -->
+<!-- Footer Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 max-w-[480px] mx-auto bg-white/80 backdrop-blur-lg border-t border-slate-200 px-2 pb-6 pt-2">
+<div class="flex items-center justify-between">
+<a class="flex flex-col items-center justify-center flex-1 gap-1 py-1" href="#">
+<span class="material-symbols-outlined text-slate-400">home</span>
+<span class="text-[10px] font-medium text-slate-400">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 gap-1 py-1" href="#">
+<span class="material-symbols-outlined text-slate-400">swap_horiz</span>
+<span class="text-[10px] font-medium text-slate-400">Transações</span>
+</a>
+<div class="flex-1"></div> <!-- Spacer for FAB position alignment if needed, but FAB is floating -->
+<a class="flex flex-col items-center justify-center flex-1 gap-1 py-1" href="#">
+<span class="material-symbols-outlined text-primary fill-[1]">flag</span>
+<span class="text-[10px] font-bold text-primary">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 gap-1 py-1" href="#">
+<span class="material-symbols-outlined text-slate-400">colors_spark</span>
+<span class="text-[10px] font-medium text-slate-400">IA</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

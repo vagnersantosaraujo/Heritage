@@ -1,0 +1,153 @@
+<!DOCTYPE html><html class="light" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }</script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between p-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-10 border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" style=""><span class="material-symbols-outlined text-slate-900 dark:text-slate-100" style="">chevron_left</span></button>
+<span class="text-xl font-bold font-display flex items-center gap-2" style="">
+<span class="text-2xl" style="">🏛️</span> Segurança</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" style=""><span class="material-symbols-outlined text-slate-900 dark:text-slate-100" style="">chevron_left</span></button>
+<div class="size-10 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDZMeQL1ApqnEYFp3MMpG6iaGTXUb3mR6D62dQ7Ty23OB0PCeRzXWOimvh69ZN76cYwoE-6zgyobW-wqtA1rTL6uHSj2N9b9cN-_0Wno4eulcoLPfEHBCMUc4Bkg6IOdKeNhLdpXg7PdWh_tHCNgzv-AnyTqIzBdzkm8KTEwOvnMTLG7n9twxC2Im33s02cm2U9nSohaOCYPb5_282TDNyFGt6IMf7_APgZOh7_lmZAsXhzxnQGxrP7mDub4aL8QV6Rce1QKmQAQQ" style="">
+</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto">
+<!-- Status Banner -->
+<div class="p-4">
+<div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-primary/5 p-5 sm:flex-row sm:items-center sm:justify-between">
+<div class="flex gap-4 items-start">
+<div class="bg-primary/10 p-2 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl" style="">verified_user</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight" style="">Sua conta está protegida</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal" style="">Sua conta Heritage utiliza as camadas mais modernas de proteção digital.</p>
+</div>
+</div>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal transition-opacity hover:opacity-90" style="">
+<span class="truncate" style="">Ver detalhes</span>
+</button>
+</div>
+</div>
+<!-- Section: Acesso e Autenticação -->
+<div class="mt-4">
+<h3 class="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider px-4 pb-2" style="">Acesso e Autenticação</h3>
+<!-- Face ID Toggle -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-900/50 px-4 min-h-[72px] py-2 border-b border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined" style="">fingerprint</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal" style="">Face ID / Biometria</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-tight" style="">Acesse sua conta com rapidez</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-slate-200 dark:bg-slate-700 p-0.5 has-[:checked]:bg-primary transition-colors" style="">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="h-full w-[27px] rounded-full bg-white shadow-md transform transition-transform peer-checked:translate-x-5"></div>
+</label>
+</div>
+</div>
+<!-- Alterar Senha -->
+<button class="w-full flex items-center gap-4 bg-white dark:bg-slate-900/50 px-4 min-h-[72px] py-2 border-b border-slate-100 dark:border-slate-800 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" style="">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined" style="">lock_reset</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal" style="">Alterar Senha</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-tight" style="">Atualize sua senha de acesso</p>
+</div>
+<span class="material-symbols-outlined text-slate-400" style="">chevron_right</span>
+</button>
+<!-- 2FA -->
+<button class="w-full flex items-center gap-4 bg-white dark:bg-slate-900/50 px-4 min-h-[72px] py-2 border-b border-slate-100 dark:border-slate-800 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" style="">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined" style="">vibration</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<div class="flex items-center gap-2">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal" style="">Autenticação em Duas Etapas</p>
+<span class="bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase" style="">Ativo</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-tight" style="">Proteção extra para sua conta</p>
+</div>
+<span class="material-symbols-outlined text-slate-400" style="">chevron_right</span>
+</button>
+</div>
+<!-- Section: Monitoramento -->
+<div class="mt-8 mb-24">
+<h3 class="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider px-4 pb-2" style="">Dispositivos</h3>
+<!-- Sessões Ativas -->
+<button class="w-full flex items-center gap-4 bg-white dark:bg-slate-900/50 px-4 min-h-[72px] py-2 border-b border-slate-100 dark:border-slate-800 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" style="">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined" style="">devices</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal" style="">Sessões Ativas</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-tight" style="">Gerencie dispositivos conectados</p>
+</div>
+<span class="material-symbols-outlined text-slate-400" style="">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-8 pb-6 pt-3 z-20">
+<div class="max-w-md mx-auto flex items-center justify-between gap-8">
+<a class="flex flex-col items-center gap-1 group" href="#" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors" style="">home</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400" style="">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors" style="">sync_alt</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400" style="">Transações</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors" style="">flag</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400" style="">Metas</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors" style="">auto_awesome</span>
+<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400" style="">IA</span>
+</a>
+</div>
+</nav>
+</body></html>

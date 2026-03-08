@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heritage - Criar Nova Meta Familiar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10B981",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(16, 185, 129, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-4 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-slate-200/50 transition-colors">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold flex items-center gap-2">
+<span class="text-2xl">🏛️</span>
+                Heritage
+            </h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">dark_mode</span>
+</button>
+<div class="size-10 rounded-full bg-primary/20 border-2 border-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile picture placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI7Zvy1GvwFBwbtT5jLCb-iMnDl8dIjIVbYaJwQZzEFyTafCfkAmWBWTvXOy_t_5dUaZPGTVFxEUh-POFaVGFaolQbUOqPJfnsiGBeLiptelvACN9aPrU4U2sfe6mAuSpgmvJaW01vR91c8Am7cgu_M3Z_X9cuu2DewFauJICtvfDdomkq7fKjeKFQt3QpoytT1Y50WASSb6UthSaJjUFXN779GWi_Nd3je8TyQ7P2nF2ToUr4bDmMWkP9UgJKf8nBXuHYNLrxjkQ"/>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto px-4 py-6 pb-32">
+<div class="mb-8">
+<h2 class="text-2xl font-bold tracking-tight">Criar Nova Meta Familiar</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-1">Defina um novo objetivo para sua família.</p>
+</div>
+<form class="space-y-6">
+<!-- Goal Title -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Título da Meta</label>
+<div class="relative">
+<input class="w-full h-14 glass-card rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent border-slate-200 transition-all outline-none bg-white/50" placeholder="Ex: Reforma da Cozinha" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-slate-400">edit_note</span>
+</div>
+</div>
+<!-- Target Amount -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Valor Alvo Total (R$)</label>
+<div class="relative">
+<input class="w-full h-14 glass-card rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent border-slate-200 transition-all outline-none bg-white/50" placeholder="0,00" type="number"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-slate-400">payments</span>
+</div>
+</div>
+<!-- Contributors Section -->
+<div class="glass-card rounded-2xl p-4 space-y-4 border-dashed border-2 border-primary/30">
+<h3 class="text-sm font-bold text-primary uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">group</span>
+                    Contribuições Mensais
+                </h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-500">Vagner (R$)</label>
+<input class="w-full h-12 bg-white/40 border border-slate-200 rounded-lg px-3 focus:ring-1 focus:ring-primary outline-none" placeholder="0,00" type="number"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-500">Soane (R$)</label>
+<input class="w-full h-12 bg-white/40 border border-slate-200 rounded-lg px-3 focus:ring-1 focus:ring-primary outline-none" placeholder="0,00" type="number"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Target Date -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Data Alvo</label>
+<div class="relative">
+<input class="w-full h-14 glass-card rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent border-slate-200 transition-all outline-none bg-white/50 text-sm" type="date"/>
+</div>
+</div>
+<!-- Category -->
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Categoria</label>
+<div class="relative">
+<select class="w-full h-14 glass-card rounded-xl px-4 focus:ring-2 focus:ring-primary focus:border-transparent border-slate-200 appearance-none transition-all outline-none bg-white/50">
+<option>Casa</option>
+<option>Viagem</option>
+<option>Reserva</option>
+<option>Veículo</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-16 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-4" type="submit">
+<span class="material-symbols-outlined">add_task</span>
+                Criar Meta Familiar
+            </button>
+</form>
+</main>
+<!-- Floating Action Button -->
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-6 py-3 flex items-center justify-between z-50">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">home</span>
+<span class="text-[10px] font-medium text-slate-400">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">swap_horiz</span>
+<span class="text-[10px] font-medium text-slate-400">Transações</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary fill-[1]">flag</span>
+<span class="text-[10px] font-bold text-primary">Metas</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">colors_spark</span>
+<span class="text-[10px] font-medium text-slate-400">IA</span>
+</a>
+</nav>
+</body></html>
